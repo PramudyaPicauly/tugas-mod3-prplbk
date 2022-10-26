@@ -1,0 +1,54 @@
+.card-container {
+	display: grid;
+	width: 95%;
+	margin: 0 auto;
+	gap: 0.5rem;
+	grid-template-columns: repeat(4, 25%);
+	color: rgb(255, 184, 52);
+}
+
+.card-item {
+	position: relative;
+	width: 100%;
+	background-color: rgb(26, 26, 26);
+	border-radius: 0.3em;
+}
+
+.card-item > .info {
+	position: absolute;
+	right: 0;
+	padding: 0 0.5rem;
+	cursor: pointer;
+}
+
+.card-item > .nama-panggilan {
+	text-align: center;
+	margin-top: 0.75rem;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.card-item > .nim {
+	margin-bottom: 0.25rem;
+	text-align: center;
+	font-size: small;
+}
+
+.card-item > .email {
+	margin-bottom: 0.75rem;
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+}
+
+@media (max-width: 600px) {
+	.card-container {
+		grid-template-columns: repeat(2, 50%);
+	}
+}
+
+@media (max-width: 900px) {
+	.card-container {
+		grid-template-columns: repeat(3, 33%);
+	}
+}
